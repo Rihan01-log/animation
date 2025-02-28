@@ -12,7 +12,8 @@ class _ThirdscreenState extends State<Thirdscreen>
   late AnimationController controller;
   late Animation<Color?> animation;
   @override
-  void initState() {
+  void initState(
+  ) {
     super.initState();
     controller =
         AnimationController(vsync: this, duration: Duration(seconds: 3))
@@ -37,7 +38,6 @@ class _ThirdscreenState extends State<Thirdscreen>
             Hero(tag: 'hello', child: Text('Hello')),
             SizedBox(
               height: 20,
-              
             ),
             AnimatedBuilder(
               animation: animation,
